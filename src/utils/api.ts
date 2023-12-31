@@ -1,4 +1,5 @@
 import {createServer} from 'miragejs';
+import {data} from '../../data';
 
 export function makeServer({environment = 'test'} = {}) {
   return createServer({
@@ -11,6 +12,9 @@ export function makeServer({environment = 'test'} = {}) {
         return {
           info: 'success',
         };
+      });
+      this.get('/posts', () => {
+        return data;
       });
     },
   });
