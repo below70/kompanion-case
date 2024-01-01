@@ -2,7 +2,7 @@ export const data = [
   {
     id: 1,
     source: [
-      'https://images.freeimages.com/images/large-previews/836/bee-1366468.jpg',
+      'https://firebasestorage.googleapis.com/v0/b/horoscope-20d38.appspot.com/o/184972%20(360p).mp4?alt=media&token=d8977c53-7e67-433c-ad6d-ef3f97476632',
     ],
     type: 'video',
   },
@@ -33,7 +33,7 @@ export const data = [
   {
     id: 5,
     source: [
-      'https://images.freeimages.com/images/large-previews/aed/three-bees-on-sunflower-1337029.jpg',
+      'https://firebasestorage.googleapis.com/v0/b/horoscope-20d38.appspot.com/o/184972%20(360p).mp4?alt=media&token=d8977c53-7e67-433c-ad6d-ef3f97476632',
     ],
     type: 'video',
   },
