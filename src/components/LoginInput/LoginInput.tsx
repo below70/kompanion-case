@@ -16,6 +16,7 @@ export default function LoginInput(props: Props): JSX.Element {
         value={value}
         onChangeText={onChange}
         style={styles.textInput}
+        placeholderTextColor={'gray'}
       />
     </View>
   );

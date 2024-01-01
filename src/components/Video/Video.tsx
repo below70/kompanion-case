@@ -21,7 +21,7 @@ export default function Video(props: Props): JSX.Element {
         }}
         videoWidth={width}
         videoHeight={width}
-        resizeMode="contain"
+        resizeMode="cover"
       />
     </View>
   );

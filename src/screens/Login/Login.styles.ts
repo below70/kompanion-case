@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 36,
     marginBottom: 48,
+    color: 'black',
   },
   inputContainer: {
     height: 150,
