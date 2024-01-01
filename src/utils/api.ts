@@ -16,6 +16,9 @@ export function makeServer({environment = 'test'} = {}) {
       this.get('/posts', () => {
         return data;
       });
+      this.get('/search', () => {
+        return data;
+      });
     },
   });
 }

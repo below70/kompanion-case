@@ -1,16 +1,17 @@
 import {ActivityIndicator, FlatList} from 'react-native';
 import styles from './Feed.styles';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import {PostCard} from '../../components';
+import {PostCard, SearchBar} from '../../components';
 import {Post} from './Feed.container';
 
 interface Props {
   loading: boolean;
   data: Post[];
+  onSearch: () => void;
 }
 
 export default function FeedUI(props: Props): JSX.Element {
-  const {loading, data} = props;
+  const {loading, data, onSearch} = props;
   if (loading) {
     return <ActivityIndicator style={styles.container} size={'large'} />;
   }
@@ -20,6 +21,7 @@ export default function FeedUI(props: Props): JSX.Element {
         data={data}
         renderItem={({item}) => <PostCard {...item} />}
         showsVerticalScrollIndicator={false}
+        ListHeaderComponent={<SearchBar onSearch={onSearch} />}
       />
     </SafeAreaView>
   );

@@ -4,10 +4,11 @@ import SliderUI from './Slider.ui';
 interface Props {
   id: number;
   source: string[];
+  width: number;
 }
 
 export default function SliderContainer(props: Props): JSX.Element {
-  const {id, source} = props;
+  const {id, source, width} = props;
 
   const [activeSlider, setActiveSlider] = useState<number>(0);
 
@@ -28,6 +29,7 @@ export default function SliderContainer(props: Props): JSX.Element {
       source={source}
       activeSlider={activeSlider}
       handleSliderState={handleSliderState}
+      width={width}
     />
   );
 }

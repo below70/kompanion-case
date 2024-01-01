@@ -1,5 +1,4 @@
 import {
-  Dimensions,
   Image,
   NativeScrollEvent,
   NativeSyntheticEvent,
@@ -12,12 +11,12 @@ interface Props {
   id: number;
   source: string[];
   activeSlider: number;
+  width: number;
   handleSliderState: (e: NativeSyntheticEvent<NativeScrollEvent>) => void;
 }
 
 export default function SliderUI(props: Props): JSX.Element {
-  const {id, source, handleSliderState, activeSlider} = props;
-  const {width} = Dimensions.get('window');
+  const {id, source, handleSliderState, activeSlider, width} = props;
 
   return (
     <View style={{width: width, height: width + 50}}>

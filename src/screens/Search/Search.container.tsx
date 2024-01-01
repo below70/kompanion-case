@@ -1,23 +1,17 @@
 import {useEffect, useState} from 'react';
-import FeedUI from './Feed.ui';
-
+import SearchUI from './Search.ui';
+import {Post} from '../Feed/Feed.container';
 import {ParamListBase, useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
-export interface Post {
-  id: number;
-  source: string[];
-  type: string;
-}
-
-export default function FeedContainer(): JSX.Element {
+export default function SearchContainer(): JSX.Element {
   const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
 
   const [data, setData] = useState<Post[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    fetch('/api/posts')
+    fetch('/api/search')
       .then(response => response.json())
       .then(json => {
         setData(json);
@@ -27,9 +21,8 @@ export default function FeedContainer(): JSX.Element {
       });
   }, []);
 
-  function onSearch() {
-    navigation.navigate('Search');
+  function goBack() {
+    navigation.goBack();
   }
-
-  return <FeedUI loading={loading} data={data} onSearch={onSearch} />;
+  return <SearchUI data={data} loading={loading} goBack={goBack} />;
 }
