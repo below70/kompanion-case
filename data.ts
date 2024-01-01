@@ -33,14 +33,14 @@ export const data = [
   {
     id: 5,
     source: [
-      'https://firebasestorage.googleapis.com/v0/b/horoscope-20d38.appspot.com/o/184972%20(360p).mp4?alt=media&token=d8977c53-7e67-433c-ad6d-ef3f97476632',
+      'https://firebasestorage.googleapis.com/v0/b/horoscope-20d38.appspot.com/o/pexels-ertabbt-19549099%20(1440p).mp4?alt=media&token=caceaf01-e5c5-4b39-9cb9-3e7feb0c9add',
     ],
     type: 'video',
   },
   {
     id: 6,
     source: [
-      'https://firebasestorage.googleapis.com/v0/b/horoscope-20d38.appspot.com/o/184972%20(360p).mp4?alt=media&token=d8977c53-7e67-433c-ad6d-ef3f97476632',
+      'https://firebasestorage.googleapis.com/v0/b/horoscope-20d38.appspot.com/o/pexels-ertabbt-19061385%20(1080p).mp4?alt=media&token=054577ca-0759-453b-b11f-6a5d6dde852f',
     ],
     type: 'video',
   },
@@ -71,7 +71,7 @@ export const data = [
   {
     id: 10,
     source: [
-      'https://firebasestorage.googleapis.com/v0/b/horoscope-20d38.appspot.com/o/184972%20(360p).mp4?alt=media&token=d8977c53-7e67-433c-ad6d-ef3f97476632',
+      'https://firebasestorage.googleapis.com/v0/b/horoscope-20d38.appspot.com/o/pexels-alessandro-polese-19490698%20(2160p).mp4?alt=media&token=099d8725-e7af-4113-83a2-7389a4ddb405',
     ],
     type: 'video',
   },
