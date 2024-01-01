@@ -20,7 +20,13 @@ export default function SearchUI(props: Props): JSX.Element {
   const {data, loading, goBack} = props;
 
   if (loading) {
-    return <ActivityIndicator style={styles.container} size={'large'} />;
+    return (
+      <ActivityIndicator
+        testID="loading"
+        style={styles.container}
+        size={'large'}
+      />
+    );
   }
   return (
     <SafeAreaView style={styles.container}>
@@ -31,7 +37,7 @@ export default function SearchUI(props: Props): JSX.Element {
         showsVerticalScrollIndicator={false}
         ListHeaderComponent={
           <View style={styles.header}>
-            <TouchableOpacity onPress={goBack}>
+            <TouchableOpacity testID="back-button" onPress={goBack}>
               <Icon
                 name="chevron-left"
                 size={36}

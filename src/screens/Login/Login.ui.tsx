@@ -39,7 +39,7 @@ export default function LoginUI(props: Props): JSX.Element {
             />
           </View>
           <View style={styles.btnContainer}>
-            <Button title="Submit" onPress={login} />
+            <Button testID="login-button" title="Submit" onPress={login} />
           </View>
         </View>
       </TouchableWithoutFeedback>

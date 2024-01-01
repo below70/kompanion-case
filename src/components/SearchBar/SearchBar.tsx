@@ -10,7 +10,10 @@ export default function SearchBar(props: Props): JSX.Element {
   return (
     <View style={styles.container}>
       <TextInput placeholderTextColor={'black'} placeholder="type to search" />
-      <TouchableOpacity style={styles.button} onPress={onSearch}>
+      <TouchableOpacity
+        testID="search-button"
+        style={styles.button}
+        onPress={onSearch}>
         <Icon
           name="search1"
           size={20}

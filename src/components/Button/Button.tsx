@@ -4,12 +4,16 @@ import styles from './Button.styles';
 interface Props {
   title: string;
   onPress: () => void;
+  testID?: string;
 }
 
 export default function Button(props: Props): JSX.Element {
-  const {title, onPress} = props;
+  const {title, onPress, testID} = props;
   return (
-    <TouchableOpacity onPress={onPress} style={styles.container}>
+    <TouchableOpacity
+      testID={testID}
+      onPress={onPress}
+      style={styles.container}>
       <Text style={styles.text}>{title}</Text>
     </TouchableOpacity>
   );

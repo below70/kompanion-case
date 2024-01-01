@@ -1,4 +1,4 @@
-import {Dimensions, View, Text} from 'react-native';
+import {Dimensions, View} from 'react-native';
 import {Slider, Video} from '..';
 import {Post} from '../../screens/Feed/Feed.container';
 import styles from './PostCard.styles';
@@ -14,9 +14,6 @@ export default function PostCard(post: Post): JSX.Element {
       ) : (
         <Slider id={id} source={source} width={width} />
       )}
-      <View style={styles.extraWrapper}>
-        <Text>extra content</Text>
-      </View>
     </View>
   );
 }
